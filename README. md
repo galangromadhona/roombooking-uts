@@ -1,0 +1,48 @@
+# RoomBooking - Sistem Booking Ruang Rapat
+
+**UTS Testing dan Implementasi Sistem**
+- Nama: Galang Romadhona
+- NIM: 2305102015
+- Nomor presensi: 12
+- Studi kasus: Sistem Booking Ruang Rapat
+
+## Deskripsi
+RoomBooking adalah aplikasi web untuk memesan ruang rapat dan memeriksa
+bentrok jadwal pemesanan secara otomatis.
+
+## Fitur
+- Menampilkan daftar ruangan beserta kapasitas dan fasilitas
+- Membuat pemesanan dengan validasi data
+- Pemeriksaan jadwal bentrok pada ruangan yang sama
+- Menampilkan daftar pemesanan
+- Mengubah dan membatalkan pemesanan
+- Admin: login, kelola data ruangan, lihat seluruh pemesanan
+
+
+## Teknologi
+- PHP Native
+- MySQL
+- HTML, CSS, JavaScript, Bootstrap 5
+- XAMPP dan Visual Studio Code
+
+## Aturan Bentrok Jadwal
+- Ruangan sama + waktu tumpang tindih: **ditolak**
+- Ruangan berbeda pada waktu sama: diterima
+- Jadwal berurutan (09.00-10.00 lalu 10.00-11.00): diterima
+- Pemesanan berstatus batal tidak menghalangi pemesanan baru
+
+## Cara Menjalankan
+1. Pasang XAMPP, lalu jalankan **Apache** dan **MySQL**.
+2. Salin folder proyek ke `C:\xampp\htdocs\roombooking`.
+3. Buka `http://localhost/phpmyadmin`, buat database bernama `roombooking`.
+4. Pilih database tersebut, klik **Import**, lalu pilih file
+   `database/roombooking.sql`.
+5. Cek pengaturan koneksi di `[path file koneksi]` (default XAMPP:
+   user `root`, password kosong).
+6. Buka `http://localhost/roombooking` di browser.
+
+## Akun Pengujian
+| Peran | Username | Password |
+|-------|----------|----------|
+| Admin | admin    | admin123 |
+
